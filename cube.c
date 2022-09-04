@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+
 float A, B, C;
 
 float cubeWidth = 20;
@@ -30,6 +31,7 @@ float calculateY(int i, int j, int k) {
          j * sin(A) * sin(B) * sin(C) + k * cos(A) * sin(B) * sin(C) -
          i * cos(B) * sin(C);
 }
+
 float calculateZ(int i, int j, int k) {
   return k * cos(A) * cos(B) - j * sin(A) * cos(B) + i * sin(B);
 }
